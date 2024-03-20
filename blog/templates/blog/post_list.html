@@ -9,17 +9,13 @@
     <header>
         <h1><a href="/">Django Blog</a></h1>
     </header>
-
-    <article>
-        <time>published: 19/3/24, 18:10</time>
-        <h2><a href="">My first post</a></h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic pariatur dolore voluptates explicabo quaerat incidunt praesentium, at aspernatur earum dignissimos?</p>
-    </article>
-
-    <article>
-        <time>published: 19/3/24, 18:11</time>
-        <h2><a href="">My second post</a></h2>
-        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-    </article>
+    
+    {% for post in posts %}
+        <article>
+            <time>published: {{ post.published_date }}</time>
+            <h2><a href="">{{ post.title }}</a></h2>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </article>
+    {% endfor %}
 </body>
 </html>
