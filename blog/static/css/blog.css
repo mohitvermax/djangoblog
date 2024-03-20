@@ -1,5 +1,5 @@
 h1 a, h2 a {
-    color: #00c21a;
+    color: #C25100;
     font-family: 'Lobster';
 }
 
@@ -8,7 +8,7 @@ body {
 }
 
 .page-header {
-    background-color: #00c21a;
+    background-color: #C25100;
     margin-top: 0;
     margin-bottom: 40px;
     padding: 20px 20px 20px 40px;
@@ -68,12 +68,12 @@ h4 {
 
 .btn-secondary,
 .btn-secondary:visited {
-    color: #00c21a;
+    color: #C25100;
     background: none;
-    border-color: #00c21a;
+    border-color: #C25100;
 }
 
 .btn-secondary:hover {
     color: #FFFFFF;
-    background-color: #00c21a;
+    background-color: #C25100;
 }
